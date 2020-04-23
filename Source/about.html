@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome Healthcare Worker!</title>
+	<link rel="stylesheet" type="text/css" href="about.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script>	
+		jQuery(document).ready(function($) {
+			tab = $('.tabs h3 a');
+
+			tab.on('click', function(event) {
+				event.preventDefault();
+				tab.removeClass('active');
+				$(this).addClass('active');
+
+				tab_content = $(this).attr('href');
+				$('div[id$="tab-content"]').removeClass('active');
+				$(tab_content).addClass('active');
+			});
+		});
+	</script>
+</head>
+<header>
+    <div class="container">
+      <div class="logo"><img src="logo.png" alt="logo"/></div>
+
+      <nav>
+        <ul>
+          <li><a href="nav.html">Home</a></li>
+          <li><a href="healthcarelogin.html">Healthcare Worker</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+<body>
+	<h1> About Us</h1>
+
+	<p>The system is client-server based web application for promotion and use of Holistic Nutrition among women and children for Poshan Abhyaan. Holistic nutrition is that one&apos;s health is an expression of the complex interplay between the physical and chemical, mental and emotional, as well as spiritual and environmental aspects of one&apos;s life and being. Holistic nutrition professionals emphasize the building of health by approaching each person as a unique individual. This requires fully engaging the individual in their health recovery process and honoring their innate wisdom by working in an empowering and cooperative manner to chart a course to optimal health. The system consists of Health Care Workers, Nutrition Centres and women and children as users. Using this web app, health care workers can view details of all the users and nutrition centres. The default check up for dose is set monthly for every user by Health care worker. Users can check notifications from health care workers, schedule/cancel appointments, view locations of nutrition centres and be notified of upcoming doses/check ups. </p>
+
+	<img id="img1" src="nutrition.png"/>
+	<br>
+	<br>
+	<img id="img2" src="nut2.png"/>
+
+</body>
+
+<link rel="stylesheet" href="css/footer-distributed-with-address-and-phones.css">
+
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+  <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+ <footer class="footer-distributed">
+
+      <div class="footer-left">
+
+        <IMG SRC="" ALT="" WIDTH=150 HEIGHT=100>
+
+        <p class="footer-links">
+          <a href="#">Home</a> |
+          <a href="#">About</a> |
+          <a href="#">Centres</a> |
+          <a href="#">FAQ</a> |
+          <a href="#">Contact</a>
+        </p>
+
+         <p class="footer-company-name">A Mini Project by <br> I SRI POORVAJA (17E11A0558)<br> BHAVIRI CHANDRA LEKHA (17E11A0560)<br> MADUGULA KALYANI (17E11A0553)</p>
+      </div>
+
+      <div class="footer-center">
+
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>Street no. 1</span> Hyderabad, Telangana</p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>9999778897</p>
+        </div>
+
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a id="contact" href="mailto:support@company.com">support@poshanabhyaan.com</a></p>
+        </div>
+
+      </div>
+
+      <div class="footer-right">
+
+        <p class="footer-company-about">
+          <span>Follow us</span>
+        </p>
+
+        <div class="footer-icons">
+
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-github"></i></a>
+
+        </div>
+
+      </div>
+
+    </footer>
+</html>

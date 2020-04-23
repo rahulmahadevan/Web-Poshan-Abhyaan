@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome to Poshan Abhyaan</title>
+	<link rel="stylesheet" type="text/css" href="nav.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script>	
+		jQuery(document).ready(function($) {
+			tab = $('.tabs h3 a');
+
+			tab.on('click', function(event) {
+				event.preventDefault();
+				tab.removeClass('active');
+				$(this).addClass('active');
+
+				tab_content = $(this).attr('href');
+				$('div[id$="tab-content"]').removeClass('active');
+				$(tab_content).addClass('active');
+			});
+		});
+	</script>
+</head>
+<header>
+    <div class="container">
+      <div class="logo"><img src="logo.png" alt="logo"/></div>
+      <nav>
+        <ul>
+          <li><a href="nav.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="healthcarelogin.html">Heathcare Workers</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+<body>
+<div class="body1">
+
+	<h1>Holistic Nutrition</h1>
+
+	<p id="intro">The philosophy of holistic nutrition is that one&apos;s health is an expression of the complex interplay between the physical and chemical, mental and emotional, as well as spiritual and environmental aspects of one&apos;s life and being. As such, professionals who are trained in holistic nutrition approach health and healing from a whole-person perspective. Using nutritional education as a primary tool, holistic nutrition professionals emphasize the building of health by approaching each person as a unique individual. This requires fully engaging the individual in their health recovery process and honoring their innate wisdom by working in an empowering and cooperative manner to chart a course to optimal health.<br><br>
+
+
+	A Holistic Nutrition Professional advises individuals, families, and groups on how to improve diet, lifestyle, and attitude to promote health. He/she may work with a licensed healthcare provider to help individuals with previously diagnosed illnesses identify biochemical imbalances and toxicities that contribute to poor health. His/her advice and support is founded on evidence-based and holistic principles.<br><br>
+
+	A Natural Chef teaches clients and groups to eat for health and provides healthy meals for them.<br><br>
+
+	A licensed Healthcare Provider (MD, ND, DO, DC, RN, etc.) may work with a Holistic Nutrition Professional to educate patients on the benefits of whole foods, lifestyle improvements and appropriate supplementation relative to their health issue, or provide these services themselves.
+	</p>
+
+<!-- FORM CODE STARTS FROM HERE-->
+	<div class="form-wrap">
+			<div class="tabs">
+				<h3 class="signup-tab"><a class="active" href="#signup-tab-content">Sign Up</a></h3>
+				<h3 class="login-tab"><a href="#login-tab-content">Login</a></h3>
+			</div><!--.tabs-->
+
+			<div class="tabs-content">
+				<div id="signup-tab-content" class="active">
+					<form class="signup-form" action="usersignup.php" method="get">
+						<input type="email" name="email" class="input" id="user_email" autocomplete="off" placeholder="Email">
+						<input type="text" name="name" class="input" id="user_name" autocomplete="off" placeholder="Full Name">
+						<input type="password" name="password" class="input" id="user_pass" autocomplete="off" placeholder="Password">
+						<input type="submit" class="button" value="Sign Up">
+					</form><!--.login-form-->
+					<div class="help-text">
+						<p>By signing up, you agree to our</p>
+						<p><a href="#">Terms of service</a></p>
+					</div><!--.help-text-->
+				</div><!--.signup-tab-content-->
+
+				<div id="login-tab-content">
+					<form class="login-form" action="userlogin.php" method="get">
+						<input type="text" name="email" class="input" id="user_login" autocomplete="off" placeholder="Email or Username">
+						<input type="password" name="password" class="input" id="user_pass" autocomplete="off" placeholder="Password">
+						<input type="checkbox" class="checkbox" id="remember_me">
+						<label for="remember_me">Remember me</label>
+
+						<input type="submit" class="button" value="Login">
+					</form><!--.login-form-->
+					<div class="help-text">
+						<p><a href="#">Forget your password?</a></p>
+					</div><!--.help-text-->
+				</div><!--.login-tab-content-->
+			</div><!--.tabs-content-->
+		</div><!--.form-wrap-->
+	<!-- FORM CODE ENDS HERE-->
+</div>
+
+<div class="body2">
+	<img id="img1" src="nutrition.png" alt="Nutrition"/>
+	<img id="img2" src="nut2.png" alt="Diet"/>
+	<p id="p_img">Balanced Diet</p>
+	<p id="p_img2">Healthy Diet</p>
+</div>
+</body>
+ <!-- Site footer -->
+  <link rel="stylesheet" href="css/footer-distributed-with-address-and-phones.css">
+
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+  <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+ <footer class="footer-distributed">
+
+      <div class="footer-left">
+
+        <IMG SRC="" ALT="" WIDTH=150 HEIGHT=100>
+
+        <p class="footer-links">
+          <a href="#">Home</a> |
+          <a href="#">About</a> |
+          <a href="#">Centres</a> |
+          <a href="#">FAQ</a> |
+          <a href="#">Contact</a>
+        </p>
+
+         <p class="footer-company-name">A Mini Project by <br> I SRI POORVAJA (17E11A0558)<br> BHAVIRI CHANDRA LEKHA (17E11A0560)<br> MADUGULA KALYANI (17E11A0553)</p>
+      </div>
+
+      <div class="footer-center">
+
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>Street no. 1</span> Hyderabad, Telangana</p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>9999778897</p>
+        </div>
+
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a id="contact" href="mailto:support@company.com">support@poshanabhyaan.com</a></p>
+        </div>
+
+      </div>
+
+      <div class="footer-right">
+
+        <p class="footer-company-about">
+          <span>Follow us</span>
+        </p>
+
+        <div class="footer-icons">
+
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-github"></i></a>
+
+        </div>
+
+      </div>
+
+    </footer>
+
+ </html>
