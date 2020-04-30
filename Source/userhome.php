@@ -247,7 +247,7 @@ $(document).ready(function($) {
           <a href="#">Contact</a>
         </p>
 
-         <p class="footer-company-name">A Mini Project by <br> I SRI POORVAJA (17E11A0558)<br> BHAVIRI CHANDRA LEKHA (17E11A0560)<br> MADUGULA KALYANI (17E11A0553)</p>
+         <p class="footer-company-name">A Project for SIH by <br> Rahul Mahadevan</p>
       </div>
 
       <div class="footer-center">
@@ -259,12 +259,12 @@ $(document).ready(function($) {
 
         <div>
           <i class="fa fa-phone"></i>
-          <p>9999778897</p>
+          <p>7702XXXXXX</p>
         </div>
 
         <div>
           <i class="fa fa-envelope"></i>
-          <p><a id="contact" href="mailto:support@company.com">support@poshanabhyaan.com</a></p>
+          <p><a id="contact" href="mailto:rahulmahadevanrs@gmail.com">rahulmahadevanrs@gmail.com</a></p>
         </div>
 
       </div>
@@ -277,10 +277,10 @@ $(document).ready(function($) {
 
         <div class="footer-icons">
 
-          <a href="#"><i class="fa fa-facebook"></i></a>
-          <a href="#"><i class="fa fa-twitter"></i></a>
-          <a href="#"><i class="fa fa-linkedin"></i></a>
-          <a href="#"><i class="fa fa-github"></i></a>
+          <a href="https://www.facebook.com/rahulmahadevanrs"><i class="fa fa-facebook"></i></a>
+          <a href="https://twitter.com/rahul_mahadevan"><i class="fa fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/rahulmahadevan/"><i class="fa fa-linkedin"></i></a>
+          <a href="github.com/rahulmahadevan"><i class="fa fa-github"></i></a>
 
         </div>
 
